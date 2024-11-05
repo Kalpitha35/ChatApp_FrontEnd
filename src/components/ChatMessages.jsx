@@ -61,13 +61,13 @@ const ChatMessages = ({ name }) => {
                 {
                   socket.id == msg.userId ?
                     <>
-                      <h6 style={{ float: "right"}}> <img className='rounded-circle' width={'25px'} height={'25px'} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_yo74-55krMtk5WaKdSrW4KGO0JItraHGf5T-hCFjQqVoRWZ2MHNWni5r87QJ2adY-E&usqp=CAU" alt="" /> You : <h5 className='rounded p-1' style={{backgroundColor:'white',display:'inline' }}>{msg.text}</h5></h6>
+                      <h6 style={{ float: "right"}}> <img className='rounded-circle' width={'25px'} height={'25px'} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_yo74-55krMtk5WaKdSrW4KGO0JItraHGf5T-hCFjQqVoRWZ2MHNWni5r87QJ2adY-E&usqp=CAU" alt="" /> You : <h5 className='rounded p-1' style={{backgroundColor:'white',display:'inline',fontSize:'15px',fontSize:'15px' }}>{msg.text}</h5></h6>
                       <br />
                     </>
 
                     :
                     <>
-                      <h6 ><img className='rounded-circle' width={'25px'} height={'25px'} src="https://t4.ftcdn.net/jpg/06/41/67/77/240_F_641677758_fQm1okUZnXAvGJF178qROMQbMFaGyWtE.jpg" alt="" /> {msg.user} : <h5 className='rounded p-1' style={{backgroundColor:'white',display:'inline' }}>{msg.text}</h5></h6>
+                      <h6 ><img className='rounded-circle' width={'25px'} height={'25px'} src="https://t4.ftcdn.net/jpg/06/41/67/77/240_F_641677758_fQm1okUZnXAvGJF178qROMQbMFaGyWtE.jpg" alt="" /> {msg.user} : <h5 className='rounded p-1' style={{backgroundColor:'white',display:'inline',fontSize:'15px'}}>{msg.text}</h5></h6>
 
                     </>
                 }
@@ -86,7 +86,7 @@ const ChatMessages = ({ name }) => {
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Type your message..."
           onKeyDown={(e) => e.code === 'Enter' ? sendMessage() : null}
-        /> <a style={{textDecoration:'none',color:'black'}} href=""> <i style={{fontSize:'15px'}} className="fa-solid fa-microphone ms-2"></i></a>
+        /> <a style={{textDecoration:'none',color:'black'}} href=""> <i style={{fontSize:'25px'}} className="fa-solid fa-microphone ms-2"></i></a>
         <button style={{marginLeft:'35px',marginTop:'-10px'}} onClick={sendMessage} className=' btn btn-warning rounded-circle shadow '><i class="fa-solid fa-arrow-up"></i></button>
       </div>
     </div>
