@@ -86,7 +86,7 @@ const ChatMessages = ({ name }) => {
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Type your message..."
           onKeyDown={(e) => e.code === 'Enter' ? sendMessage() : null}
-        /> <a style={{textDecoration:'none',color:'black'}} href=""> <i style={{fontSize:'25px'}} className="fa-solid fa-microphone ms-2"></i></a>
+        /> <a style={{textDecoration:'none',color:'black'}} href=""> <i style={{fontSize:'15px'}} className="fa-solid fa-microphone ms-2"></i></a>
         <button style={{marginLeft:'35px',marginTop:'-10px'}} onClick={sendMessage} className=' btn btn-warning rounded-circle shadow '><i class="fa-solid fa-arrow-up"></i></button>
       </div>
     </div>
